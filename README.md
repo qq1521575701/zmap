@@ -6,7 +6,7 @@
 
 使用
 
-    zmap -M forbidden_scan -p 80 0.0.0.0/0 -s srcport -S srcip -B 100Mbps -o scan.txt
+    nohup zmap -p 80 0.0.0.0/0 -S ip -s port -B 100Mbps > log.log &
 
 
 卸载
