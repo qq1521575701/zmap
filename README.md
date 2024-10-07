@@ -6,7 +6,7 @@
 
 使用
 
-        zmap -M forbidden_scan -p 80 0.0.0.0/0 -f "saddr,len,payloadlen,flags,validation_type" -o scan.csv -O csv 
+    zmap -M forbidden_scan -p 80 0.0.0.0/0 -f "saddr,len,payloadlen,flags,validation_type" -o scan.csv -O csv -s srcport -S srcip -B 100Mbps
 
 
 卸载
