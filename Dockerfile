@@ -21,3 +21,5 @@ RUN cmake . && make -j4
 
 # 将 ZMap 移动到系统路径
 RUN mv /root/src/zmap /usr/local/bin/
+
+RUN rm -rf /root/*
