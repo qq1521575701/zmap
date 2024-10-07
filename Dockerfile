@@ -13,9 +13,3 @@ RUN apt-get -qq update && apt-get -qqy upgrade && \
 
 # 将当前目录下的所有文件复制到容器的 /root 目录
 COPY . /root
-
-# 设置工作目录
-WORKDIR /root/src
-
-# 构建 ZMap
-RUN cmake . && make -j4
