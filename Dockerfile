@@ -8,8 +8,8 @@ ENV ZMAP_COMMIT ${ZMAP_COMMIT}
 RUN apt-get -qq update && apt-get -qqy upgrade && \
     apt-get -qqy install build-essential cmake libgmp3-dev gengetopt libpcap-dev \
     flex byacc libjson-c-dev pkg-config libunistring-dev wget unzip && \
-    apt-get -qqy install python-dev python-pip && \
-    pip install dumb-init
+    apt-get -qqy install python3-dev python3-pip && \
+    pip3 install dumb-init
 
 # 将当前目录下的所有文件复制到容器的 /root 目录
 COPY . /root
